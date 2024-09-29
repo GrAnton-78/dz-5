@@ -1,0 +1,51 @@
+@import url('./var.css');
+
+.form_group {
+    overflow: hidden;
+    margin-top: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.form_group input[type='radio'] {
+    display: none;
+}
+
+.form_group .label-radio {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 34px;
+    border-right: none;
+    user-select: none;
+}
+.label-radio {
+    font-weight: 700;
+    color: rgb(216, 212, 7);
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(6, 53, 139);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+  } 
+  .label-radio:hover { background: rgb(26, 77, 153); }
+  .label-radio:active {
+  background: #14046d;
+  box-shadow: 0 3px #000c06 inset;
+}
+
+.form_group input[type='radio']:checked + .label-radio {
+    box-shadow: 0px 0px 25px 1px #8f8f8f inset;
+}
+
+.form_group label:hover {
+    color: red
+}
+
+.form_group input[type='radio']:disabled + .label-radio {
+    background: red;
+    color: #8f8f8f;
+}
